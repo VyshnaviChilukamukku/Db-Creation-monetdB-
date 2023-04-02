@@ -1,0 +1,10 @@
+I)------CREATION OF DBFARM-------------
+
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd create /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd get all /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd set port=50131 /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd set listenaddr=0.0.0.0 /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd start /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd stop /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd start /monet_data/DBFARM_NEW2023_Vysh_U_B/
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdbd get all /monet_data/DBFARM_NEW2023_Vysh_U_B/
