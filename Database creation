@@ -1,0 +1,12 @@
+II)-------CREATION OF DB----------------
+MonetDB-11.43.25_PY DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 create DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 set nclients=2048 DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 set embedpy=yes DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 set optpipe=sequential_pipe DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 get all DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 release DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 start DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 stop DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 start DB_Vysh_U_B
+/monet_binaries/MonetDB-11.43.25_PY/bin/monetdb -p 50131 get all DB_Vysh_U_B
