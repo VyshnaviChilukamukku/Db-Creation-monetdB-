@@ -1,0 +1,13 @@
+III)-------Connect to the mclient-----------------------
+   // And run the below sql command scripts for user authentication
+
+DM_POS_Vysh_MRT_U1
+ 
+
+CREATE USER "DM_POS_Vysh_MRT_U1" WITH PASSWORD 'Vysh123' NAME 'DM_POS_Vysh_MRT_U1' SCHEMA "sys";
+CREATE SCHEMA "DM_POS_Vysh_MRT_U1" AUTHORIZATION "DM_POS_Vysh_MRT_U1";
+ALTER USER "DM_POS_Vysh_MRT_U1" SET SCHEMA "DM_POS_Vysh_MRT_U1";
+GRANT COPY INTO,COPY FROM TO "DM_POS_Vysh_MRT_U1";
+CREATE ROLE "DM_POS_Vysh_MRT_U1_READ";
+CREATE ROLE "DM_POS_Vysh_MRT_U1_WRITE";
+GRANT "DM_POS_Vysh_MRT_U1_READ","DM_POS_Vysh_MRT_U1_WRITE" TO "DM_POS_Vysh_MRT_U1";
