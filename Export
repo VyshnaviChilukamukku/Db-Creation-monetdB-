@@ -1,0 +1,9 @@
+IV)-----------Export-------------
+
+export PATH
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export LD_LIBRARY_PATH=/monet_binaries/MonetDB-11.43.25_PY/lib64
+export LD_LIBRARY_PATH_64=/monet_binaries/MonetDB-11.43.25_PY/lib64
+export MonetDB_prefix_dir=/monet_binaries/MonetDB-11.43.25_PY/export       PATH=$MonetDB_prefix_dir/bin:$PATHexport    MANPATH=$MonetDB_prefix_dir/share/man:$MANPATHexport  CLASSPATH=$MonetDB_prefix_dir/share/monetdb/lib:$CLASSPATH
+MonetDB_python_lib=$MonetDB_prefix_dir/`python -c 'import distutils.sysconfig; print distutils.sysconfig.get_python_lib(0,1,"")'`
+export PYTHONPATH=$MonetDB_python_lib/site-packages:$python_lib/dist-packages:$PYTHONPATH
